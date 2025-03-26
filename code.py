@@ -3,13 +3,16 @@ import re
 import string
 import os
 import joblib
+import requests
+from zipfile import ZipFile
 from sklearn.feature_extraction.text import TfidfVectorizer, ENGLISH_STOP_WORDS
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
+from sklearn.metrics import accuracy_score, f1_score
 import matplotlib.pyplot as plt
 import seaborn as sns
 from tqdm import tqdm
+import requests
 
 # Configuration
 class Config:
@@ -20,6 +23,8 @@ class Config:
     MIN_WORD_LENGTH = 3
     MODEL_DIR = "model_artifacts"
     PLOT_DIR = "performance_plots"
+    DATASET_URL = "https://www.dropbox.com/scl/fi/e0htuwzj1yfdy4srn1mxd/IMDB-Dataset.csv?rlkey=iw3mf3xn16kqj81kg3ozrqsqn&st=8vgtki29&dl=1"
+    DATASET_PATH = "IMDB Dataset.csv"
 
 # Enhanced stop words
 CUSTOM_STOP_WORDS = ENGLISH_STOP_WORDS.union({
@@ -27,26 +32,27 @@ CUSTOM_STOP_WORDS = ENGLISH_STOP_WORDS.union({
     'character', 'story', 'plot', 'scene', 'watch'
 })
 
+def download_dataset():
+    """Download dataset if not present locally"""
+    if not os.path.exists(Config.DATASET_PATH):
+        print(f"Downloading dataset from {Config.DATASET_URL}...")
+        response = requests.get(Config.DATASET_URL, stream=True)
+        if response.status_code == 200:
+            with open(Config.DATASET_PATH, "wb") as f:
+                for chunk in response.iter_content(chunk_size=1024):
+                    f.write(chunk)
+            print("Download complete.")
+        else:
+            raise Exception("Failed to download dataset.")
+        
 def load_dataset():
     """Load and validate dataset"""
-    dataset_filename = "IMDB Dataset.csv"
-    search_paths = [
-        os.path.join(os.getcwd(), dataset_filename),
-        os.path.join(os.path.dirname(__file__), dataset_filename),
-        os.path.join(os.path.expanduser("~"), "Downloads", dataset_filename),
-        os.path.join("data", dataset_filename)
-    ]
-    
-    for path in search_paths:
-        if os.path.exists(path):
-            print(f"Found dataset at: {path}")
-            df = pd.read_csv(path)
-            if not all(col in df.columns for col in ['review', 'sentiment']):
-                raise ValueError("Dataset missing required columns")
-            print(f"Loaded {len(df)} reviews")
-            return df
-    
-    raise FileNotFoundError("Dataset not found in expected locations")
+    download_dataset()
+    df = pd.read_csv(Config.DATASET_PATH)
+    if not all(col in df.columns for col in ['review', 'sentiment']):
+        raise ValueError("Dataset missing required columns")
+    print(f"Loaded {len(df)} reviews")
+    return df
 
 def enhanced_preprocess(text):
     """Thorough text cleaning"""
