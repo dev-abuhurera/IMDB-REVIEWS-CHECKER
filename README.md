@@ -92,8 +92,17 @@ Classification report
 
 💻 Usage Examples
 Training with Custom Parameters
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
 python train_model.py --model lr --max_iter 1000
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
 Evaluating Specific Metrics
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
 python evaluate.py --metrics precision recall f1
 
 <div align="center">
@@ -104,14 +113,24 @@ python evaluate.py --metrics precision recall f1
 We welcome contributions! Please:
 
 Fork the repository
-
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
 Create a feature branch
-
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
 Commit your changes
-
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
 Push to the branch
-
-Open a Pull Request
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
+Open a Pull Requ<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>est
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
