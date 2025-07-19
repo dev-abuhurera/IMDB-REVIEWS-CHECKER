@@ -65,6 +65,7 @@ IMDB-REVIEWS-CHECKER/
 </div>
 
 🔧 Key Components
+
 1. Data Processing
    
 Text cleaning (special characters, stopwords)
@@ -113,10 +114,11 @@ python evaluate.py --metrics precision recall f1
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
 </div>
 
+
 🤝 Contributing
 We welcome contributions! Please:
 
-Fork the repository
+- Fork the repository
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
 </div>
