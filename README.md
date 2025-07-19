@@ -1,43 +1,32 @@
 # 🎬 IMDB Reviews Analyzer - Machine Learning Sentiment Classification
 
-![Project Banner](https://via.placeholder.com/1200x400/0D1117/7d40ff?text=IMDB+REVIEWS+ANALYZER) <!-- Replace with actual banner -->
-
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue?logo=python" alt="Python"/>
   <img src="https://img.shields.io/badge/Scikit--Learn-1.2+-orange?logo=scikit-learn" alt="Scikit-Learn"/>
+  <img src="https://img.shields.io/badge/NLP-Processing-ff69b4" alt="NLP"/>
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License"/>
-  <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen" alt="Contributions"/>
 </div>
 
-<!-- Gradient Separator -->
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
-</div>
+## 📌 Project Overview
 
-## 🌟 Key Features
+A machine learning pipeline that analyzes IMDB movie reviews to classify sentiment as positive or negative. The system includes:
 
-<div style="columns: 2; column-gap: 20px;">
-  
-✔ **Automated Dataset Fetching** from Dropbox  
-✔ **Advanced Text Preprocessing** (Tokenization, Stopword Removal)  
-✔ **TF-IDF Vectorization** for feature extraction  
-✔ **Sentiment Classification** (Positive/Negative)  
-✔ **Model Persistence** with joblib serialization  
-✔ **Performance Visualization** (Accuracy, Confusion Matrix)  
-✔ **Ready-to-Use Prediction** for new reviews  
-
-</div>
-
-<!-- Wave Separator -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=wave&color=7d40ff&height=30&section=divider"/>
-</div>
+- Automated dataset fetching from Dropbox
+- Text preprocessing and feature extraction
+- Model training and evaluation
+- Ready-to-use prediction functionality
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Python 3.8+
 - pip package manager
+
+### Installation
+
+git clone https://github.com/Abuhurera-coder/IMDB-REVIEWS-CHECKER.git
+cd IMDB-REVIEWS-CHECKER
+pip install -r requirements.txt
 
 ### Installation
 
