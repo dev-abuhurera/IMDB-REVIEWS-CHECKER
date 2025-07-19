@@ -95,7 +95,11 @@ Training with Custom Parameters
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
 </div>
-python train_model.py --model lr --max_iter 1000
+python train_model.py 
+
+--model lr 
+
+--max_iter 1000
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
 </div>
@@ -116,19 +120,19 @@ Fork the repository
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
 </div>
-Create a feature branch
+- Create a feature branch
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
 </div>
-Commit your changes
+- Commit your changes
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
 </div>
-Push to the branch
+- Push to the branch
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
 </div>
-Open a Pull Requ<div align="center">
+- Open a Pull Requ<div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
 </div>est
 
@@ -136,12 +140,6 @@ Open a Pull Requ<div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
 </div>
 
-📜 License
-MIT License - see LICENSE for details.
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
-</div>
 
 ✉️ Contact
 For questions or support:
