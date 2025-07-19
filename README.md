@@ -92,11 +92,14 @@ Classification report
 
 💻 Usage Examples
 Training with Custom Parameters
-bash
 python train_model.py --model lr --max_iter 1000
 Evaluating Specific Metrics
-bash
 python evaluate.py --metrics precision recall f1
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
+
 🤝 Contributing
 We welcome contributions! Please:
 
@@ -110,10 +113,16 @@ Push to the branch
 
 Open a Pull Request
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
 
 📜 License
 MIT License - see LICENSE for details.
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
 
 ✉️ Contact
 For questions or support:
