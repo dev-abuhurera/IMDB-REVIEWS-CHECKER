@@ -27,90 +27,87 @@ A machine learning pipeline that analyzes IMDB movie reviews to classify sentime
 git clone https://github.com/Abuhurera-coder/IMDB-REVIEWS-CHECKER.git
 cd IMDB-REVIEWS-CHECKER
 pip install -r requirements.txt
-
-### Installation
-
-# Clone repository
-git clone https://github.com/Abuhurera-coder/IMDB-REVIEWS-CHECKER.git
-cd IMDB-REVIEWS-CHECKER
-
-# Install dependencies
-pip install -r requirements.txt
-Usage Pipeline
+Basic Usage
 bash
-# 1. Download dataset
+# Download and preprocess data
 python download_dataset.py
-
-# 2. Preprocess data
 python preprocess.py
 
-# 3. Train model
+# Train and evaluate model
 python train_model.py
-
-# 4. Evaluate model
 python evaluate.py
 
-# 5. Make predictions
-python predict.py "This movie exceeded all expectations!"
-<!-- Dashed Separator --><div align="center"> <hr style="border: 1px dashed #7d40ff; width: 80%; margin: 25px 0;"> </div>
+# Make predictions
+python predict.py "The movie was fantastic!"
+
+
 🏗️ Project Structure
 text
 IMDB-REVIEWS-CHECKER/
 ├── main.py                 # Main training/evaluation script
 ├── config.py               # Configuration settings
-├── download_dataset.py     # Dataset fetcher from Dropbox
-├── preprocess.py           # Text cleaning and preparation
-├── train_model.py          # Model training pipeline
+├── download_dataset.py     # Dataset fetcher
+├── preprocess.py           # Text cleaning
+├── train_model.py          # Model training
 ├── evaluate.py             # Performance evaluation
-├── predict.py              # Sentiment prediction
-├── requirements.txt        # Dependency list
+├── predict.py              # Prediction interface
+├── requirements.txt        # Dependencies
 ├── model_artifacts/        # Saved models
-│   ├── classifier.pkl
-│   └── vectorizer.pkl
-└── performance_plots/      # Evaluation visuals
-    ├── accuracy.png
-    └── confusion_matrix.png
-<!-- Double Line Separator --><div align="center"> <hr style="border-top: 1px solid #7d40ff; border-bottom: 1px solid #7d40ff; height: 4px; width: 70%; margin: 25px 0; background: transparent;"> </div>
-📊 Model Performance
-Metric	Score
-Accuracy	89.2%
-Precision (Positive)	88.5%
-Recall (Negative)	90.1%
-F1-Score	89.3%
-https://via.placeholder.com/400/0D1117/7d40ff?text=Confusion+Matrix+Example <!-- Replace with actual plot -->
+└── performance_plots/      # Evaluation metrics
 
-<!-- Dots Separator --><div align="center"> <span style="color: #7d40ff; font-size: 24px;">• • •</span> </div>
-🔧 Customization
-Using Your Own Dataset
-Upload your CSV to Dropbox
 
-Update config.py:
 
-python
-DATASET_URL = "your-dropbox-link?dl=1"  # Must end with dl=1
-Changing Model Parameters
-Edit train_model.py:
+🔧 Key Components
+1. Data Processing
+Text cleaning (special characters, stopwords)
 
-python
-# Example: Switch to Logistic Regression
-from sklearn.linear_model import LogisticRegression
-model = LogisticRegression(max_iter=1000)
-<!-- Section Separator --><div align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=7d40ff&height=2&section=footer&width=100%"/> </div>
-🤝 How to Contribute
+Tokenization and normalization
+
+TF-IDF vectorization
+
+2. Machine Learning
+Default classifier: Logistic Regression
+
+Alternative: Random Forest
+
+Hyperparameters configurable in train_model.py
+
+3. Evaluation Metrics
+Accuracy score
+
+Precision/Recall
+
+Confusion matrix
+
+Classification report
+
+
+
+💻 Usage Examples
+Training with Custom Parameters
+bash
+python train_model.py --model lr --max_iter 1000
+Evaluating Specific Metrics
+bash
+python evaluate.py --metrics precision recall f1
+🤝 Contributing
+We welcome contributions! Please:
+
 Fork the repository
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
+Create a feature branch
 
-Commit your changes (git commit -m 'Add some feature')
+Commit your changes
 
-Push to the branch (git push origin feature/AmazingFeature)
+Push to the branch
 
 Open a Pull Request
 
+
 📜 License
-Distributed under the MIT License. See LICENSE for more information.
+MIT License - see LICENSE for details.
+
 
 ✉️ Contact
-Muhammad Abuhurera
-📧 abuhurerarchani@gmail.com
-🔗 GitHub Profile
+For questions or support:
+Email: abuhurerarchani@gmail.com
