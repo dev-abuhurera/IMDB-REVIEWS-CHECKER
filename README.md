@@ -41,6 +41,10 @@ python evaluate.py
 python predict.py "The movie was fantastic!"
 
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
+
 🏗️ Project Structure
 text
 IMDB-REVIEWS-CHECKER/
@@ -56,6 +60,9 @@ IMDB-REVIEWS-CHECKER/
 └── performance_plots/      # Evaluation metrics
 
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/240304586-218f11fa-42f4-4af1-9e0a-a2a8e8a7f4e9.gif" width="100%" height="2px"/>
+</div>
 
 🔧 Key Components
 1. Data Processing
